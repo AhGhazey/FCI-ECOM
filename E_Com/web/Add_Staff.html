@@ -1,0 +1,84 @@
+<link rel="stylesheet" type="text/css" href="css/smart-forms.css">
+<script  src="javascript/jquery-2.1.4.js"></script>
+<script  src="javascript/AddStaff_script.js"></script>
+<div id ="add_staff">
+
+    <form id="add_staff_form" method="post" action="AccountServlet">
+        <div class="smart-forms" >
+
+            <div class="form-body theme-black" >
+
+                <div class=" spacer-b25 spacer-t20">
+                    <div class="tagline"><span>Add New Staff </span></div>
+                </div>
+
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="StaffName" id="staffName" class="gui-input" placeholder="Staff Name">
+                            <label for="StaffName" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="password" name="staff_password" id="staff_password" class="gui-input" placeholder="Password">
+                            <label for="staff_password" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div><!-- end section -->
+                </div>
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="Staffemail" id="staff_email" class="gui-input" placeholder="Staff Email">
+                            <label for="StaffEmail" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+
+             
+
+                <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                    <label class="field select">
+                        <select id="Staff_department" name="Staff_department" >
+
+                        </select>
+                        <i class="arrow double"></i>
+                    </label>
+                </div>
+
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="Staff_Role" id="Staff_Role" class="gui-input" placeholder="Staff Role">
+                            <label for="Staff_Role" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                
+                  <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="Staff_possition" id="Staff_possition" class="gui-input" placeholder="Staff Possition">
+                            <label for="Staff_possition" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                
+                <input type="text" name="flag" id="admin_flag" style="display: none">
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon" id = "staff_ajaxResponse" >
+                        </label>
+                    </div><!-- end section -->
+                </div>
+
+            </div>
+            <div class="form-footer" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                <button id ="addStaff_form_submit" type="button" class="button btn-black" >Add Staff</button>
+            </div>
+        </div>
+    </form>
+
+</div>

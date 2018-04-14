@@ -1,0 +1,58 @@
+<link rel="stylesheet" type="text/css" href="css/smart-forms.css">
+<script  src="javascript/jquery-2.1.4.js"></script>
+<script  src="javascript/RegisterOfficeHours_script.js"></script>
+<div id ="RegisterOfficeHours">
+
+    <form id="RegisterOfficeHours_form" method="post" action="StaffServlet">
+        <div class="smart-forms" >
+
+            <div class="form-body theme-black" >
+
+                <div class=" spacer-b25 spacer-t20">
+                    <div class="tagline"><span>Add Office Hours </span></div>
+                </div>
+
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="rohday" id="rohday" class="gui-input" placeholder="Day">
+                            <label for="rohday" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+
+                  <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="rohplace" id="rohplace" class="gui-input" placeholder="Place">
+                            <label for="rohplace" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                 <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="rohfrom" id="rohfrom" class="gui-input" placeholder="From">
+                            <label for="rohfrom" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                 <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="rohto" id="rohto" class="gui-input" placeholder="To">
+                            <label for="rohto" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                <input type="text" name="flag" id="admin_flag" style="display: none">
+               
+
+            </div>
+            <div class="form-footer" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                <button id ="addofficehours_form_submit" type="button" class="button btn-black" >Add Office Hour</button>
+            </div>
+        </div>
+    </form>
+
+</div>

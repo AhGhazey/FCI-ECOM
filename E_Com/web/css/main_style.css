@@ -1,0 +1,332 @@
+@import url("smart-forms-ie8.css");
+
+html, body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: block;
+}
+.WidgetContent{
+    height: auto;
+    min-height: 90%;
+    padding: 0px;
+    margin: 0px;
+}
+div #header-top{
+    position: relative;
+    background-color: #ffffff;
+    height: 68px;
+    padding-top: 20px;
+    line-height: 50px;
+    overflow: hidden;
+    z-index: 1;    
+}
+.w3-right {
+    float: right!important;
+}
+.w3-wide {
+    letter-spacing: 4px;
+}
+
+.topnav {
+    position: relative;
+    z-index: 2;
+    font-size: 17px;
+    background-color: #5f5f5f;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 0;
+    letter-spacing: 1px;
+}
+.fci-logo {
+    font-family: fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #555555;
+    display: block;
+    position: absolute;
+    top: 17px;
+    padding-left: 2px;
+}
+.dotcom {
+    color: #4CAF50;
+}
+h1, h2, h3, h4, h5, h6, .w3-slim, .w3-wide {
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+.w3-card-2, .w3-example {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+}
+
+.header ul li {
+    float: left;
+}
+
+.header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#ajaxResponse{
+
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    display: block;
+    color: red;
+
+}
+/* Change the link color to #111 (black) on hover */
+.header ul li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+.not-active{
+    background-color: #333;
+}
+.show {
+    display :block;
+}
+.hidden{
+    display: none;
+}
+.left_side_bar{
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    height: 640px;
+
+    overflow: hidden;
+    left: 0;
+    float: left;
+    /* border: solid 1px; */
+}
+.main_content{
+    margin: 10px;
+    padding: 0;
+    width: 78%;
+    height: 100%;
+    position: absolute;
+    overflow: auto;
+    float: right;
+    display: block;
+    right: 0;
+}
+.footer{
+    background: #0E0E0E;
+    border-top: 1px solid #333333;
+    color: #FFF;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.left_menu div ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.left_menu div ul li a {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.left_menu div ul li a:hover {
+    background-color: #111;
+}
+
+.userinfo{
+    display: block;
+    padding: 10px;
+}
+.userinfo > span{
+    display: block;
+    font-size: small;
+    font-weight: bold;
+}
+#initial_step {  
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: x-large;
+    text-align: center;
+    color: #DAD8D8;
+}
+.highlight { 
+    //background-color: #49AEE8;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #333333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    width:100%
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+#gmap_canvas img{
+    max-width:none!important;
+    background:none!important
+}
+
+#map{
+    width: 48%;
+    float: right;
+}
+#faculty-information{
+    width: 48%;
+    float: left;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Verdana,sans-serif;
+}
+
+.announcement_item p{    
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Verdana,sans-serif;
+}
+
+
+
+.news_item{
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Verdana,sans-serif;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid #4CAF50;    
+    width: 72% ;
+    float:left;
+    display: block;
+}
+.news_image{
+    
+    float: right;
+    display: block;
+    width: 25%; 
+}
+.accept{
+        display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 200px;
+    background-color: #4CAF50;
+    color: white;
+    border: solid 0px;
+    height: 41px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.refuse{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 200px;
+    background-color: red;
+    color: white;
+    
+    border: solid 0px;
+    height: 41px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.accept a:hover {
+    background-color: #111;
+}
+.refuse a:hover {
+    background-color: #111;
+}

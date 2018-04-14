@@ -1,0 +1,105 @@
+
+<link rel="stylesheet" type="text/css" href="css/smart-forms.css">
+<script  src="javascript/jquery-2.1.4.js"></script>
+<script  src="javascript/AddStudent_script.js"></script>
+<div id ="add_student">
+
+    <form id="add_student_form" method="post" action="StaffServlet">
+        <div class="smart-forms" >
+
+            <div class="form-body theme-black" >
+
+                <div class=" spacer-b25 spacer-t20">
+                    <div class="tagline"><span>Add New Student </span></div>
+                </div>
+
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="StudentName" id="studentName" class="gui-input" placeholder="Student Name">
+                            <label for="StudentName" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="password" name="student_password" id="student_password" class="gui-input" placeholder="Password">
+                            <label for="student_password" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div><!-- end section -->
+                </div>
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="Studentemail" id="studentEmail" class="gui-input" placeholder="Student Email">
+                            <label for="StudentEmail" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="Student_gpa" id="student_gpa" class="gui-input" placeholder="Student GPA">
+                            <label for="Student_gpa" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                    <label class="field select">
+                        <select id="Student_major" name="student_major" >
+
+                        </select>
+                        <i class="arrow double"></i>
+                    </label>
+                </div>
+
+
+
+                <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                    <label class="field select">
+                        <select id="Student_minor" name="student_minor" >
+
+                          
+                        </select>
+                        <i class="arrow double"></i>
+                    </label>
+                </div>
+
+
+                <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                    <label class="field select ">
+                        <select id="Student_Group" name="student_group" >
+
+
+                        </select>
+                        <i class="arrow double"></i>
+                    </label>
+                </div>
+
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="Student_level" id="student_level" class="gui-input" placeholder="Student Level">
+                            <label for="Student_level" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                <input type="text" name="flag" id="admin_flag" style="display: none">
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon" id = "student_ajaxResponse" >
+                        </label>
+                    </div><!-- end section -->
+                </div>
+
+            </div>
+            <div class="form-footer" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                <button id ="add_form_submit" type="button" class="button btn-black" >Add Student</button>
+            </div>
+        </div>
+    </form>
+
+</div>

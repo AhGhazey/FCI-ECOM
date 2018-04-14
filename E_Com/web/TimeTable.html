@@ -1,0 +1,80 @@
+<script  src="javascript/jquery-2.1.4.js"></script>
+<script  src="javascript/jquery-ui.js"></script>
+<script  src="javascript/TimeTable_script.js"></script>
+<link rel="stylesheet" type="text/css" href="css/smart-forms.css">
+<link rel="stylesheet" href="css/smart-forms-ie8.css" type="text/css"/>
+<div id ="s_time_table">
+
+
+    <div class="smart-forms" >
+
+        <div class="form-body theme-black" >
+
+            <div class=" spacer-b25 spacer-t20">
+                <div class="tagline"><span>Time Table</span></div>
+            </div>
+            
+            <div class="frm-row">
+
+                <div class="section colm colm6">
+                    <label class="field select">
+                        <select id="t_department" name="t_department" >
+
+                          
+                        </select>
+                    </label>
+                </div><!-- end section -->
+
+                <div class="section colm colm6">
+                    <label class="field select">
+                         <select id="t_Student_Group" name="tstudent_group" >
+
+
+                        </select>
+                    </label>
+                </div><!-- end section -->
+
+            </div>
+            
+                <div class="frm-row">
+
+                <div class="section colm colm6">
+                    <label class="field select">
+                        <select id="t_level" name="t_department" >
+                            <option value="0">None</option>
+                            <option value="1">First class</option>
+                            <option value="2">Second class</option>
+                            <option value="3">Third class</option>
+                            <option value="4">Fourth class</option>
+                        </select>
+                    </label>
+                </div><!-- end section -->
+
+                <div class="section colm colm6">
+                    <label class="field select">
+                        <button id ="GetTable_submit" type="button" class="button btn-black" >Get Table</button>
+                    </label>
+                </div><!-- end section -->
+
+            </div>
+            <div class="frm-row" >
+                <div class="section  ">
+                    <table id="time_table">
+                        <tr> <th>Day</th> <th>8:00-9:30</th> <th>9:30-11:00</th> <th>11:15-12:45</th> <th>1:00-2:30</th> <th>2:30-4:00</th> <th>4:00-5:30</th> <th>5:30-7:00</th></tr>
+                        <tr id="row_1"><th>Saturday</th> <td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="row_2"><th>Sunday</th> <td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="row_3"><th>Monday</th> <td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="row_4"><th>Tuesday</th> <td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="row_5"><th>Wednesday</th> <td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="row_6"><th>Thursday</th> <td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr id="row_7"><th>Friday</th> <td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+

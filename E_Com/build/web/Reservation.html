@@ -1,0 +1,91 @@
+
+<link rel="stylesheet" type="text/css" href="css/smart-forms.css">
+<link rel="stylesheet" href="css/smart-forms-ie8.css" type="text/css"/>
+
+<script  src="javascript/jquery-2.1.4.js"></script>
+<script  src="javascript/jquery-ui.js"></script>
+<script  src="javascript/Reservation_script.js"></script>
+<div id ="Reservation">
+
+    <form id="reservation_form" method="post" action="StaffServlet">
+        <div class="smart-forms" >
+
+            <div class="form-body theme-black" >
+
+                <div class=" spacer-b25 spacer-t20">
+                    <div class="tagline"><span>Add New Reservation </span></div>
+                </div>
+
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <textarea name="Reservation purpose" id="reservation_purpose" class="gui-input" style="height: 150px" placeholder="Reservation purpose"></textarea>
+                            <label for="reservation_purpose" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                
+                    <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="Reservation Day" id="reservation_date" class="gui-input" placeholder="Reservation Date">
+                            <label for="reservation_date" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+            
+                
+                <div id="available_slots" class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px; overflow-y: scroll;">
+
+                </div>
+
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <label   id="Selected_slot" class="gui-input" ></label>
+                            <label for="Selected_slot" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                     <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                    <label class="field select">
+                        <select id="res_department" name="res_department" >
+
+                          
+                        </select>
+                        <i class="arrow double"></i>
+                    </label>
+                </div>
+
+
+                <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                    <label class="field select ">
+                        <select id="res_Student_Group" name="student_group" >
+
+
+                        </select>
+                        <i class="arrow double"></i>
+                    </label>
+                </div>
+
+                  <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                    <label class="field select ">
+                        <select id="res_level" name="res_level" >
+                             <option value = "1">First Class</option>
+                            <option value = "2"> Second Class</option>
+                            <option value = "3">Third Class</option>
+                            <option value = "4">Forth Class</option>
+
+                        </select>
+                        <i class="arrow double"></i>
+                    </label>
+                </div>
+
+            </div>
+            <div class="form-footer" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                <button id ="reservation_submit" type="button" class="button btn-black" >Reserve Slot</button>
+            </div>
+        </div>
+    </form>
+
+</div>

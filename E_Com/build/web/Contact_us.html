@@ -1,0 +1,61 @@
+
+
+<link rel="stylesheet" type="text/css" href="css/smart-forms.css">
+<link rel="stylesheet" href="css/smart-forms-ie8.css" type="text/css"/>
+
+<script  src="javascript/jquery-2.1.4.js"></script>
+<script  src="javascript/jquery-ui.js"></script>
+<script  src="javascript/Contact_us_script.js"></script>
+<div id ="contact_us">
+
+    <form id="contact_us_form" method="post">
+        <div class="smart-forms" >
+
+            <div class="form-body theme-black" >
+
+                <div class=" spacer-b25 spacer-t20">
+                    <div class="tagline"><span>Contact us </span></div>
+                </div>
+                
+                 <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="user_email" id="user_email" class="gui-input" placeholder="Email address">
+                            <label for="user_email" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <input type="text" name="message_title" id="message_title" class="gui-input" placeholder="Message title">
+                            <label for="message_title" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <label class="field prepend-icon">
+                            <textarea name="message_content" id="message_content" class="gui-input" style="height: 150px" placeholder="Message "></textarea>
+                            <label for="message_content" class="field-icon"><i class="fa fa-lock"></i></label>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="frm-row" >
+                    <div class="section raw" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                        <div id="contact_us_ajax_response">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-footer" style="width: 50%;margin: 0 auto;margin-bottom: 10px;">
+                <button id ="contact_us_submit" type="button" class="button btn-black" >Send Message</button>
+            </div>
+        </div>
+    </form>
+
+</div>
